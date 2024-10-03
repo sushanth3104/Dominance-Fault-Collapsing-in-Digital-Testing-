@@ -27,3 +27,29 @@ AND 10 6 3 8
 OR 11 10 9 
 
 ------------------------------------------
+####### Test Set-03 : Bushnell Page No: 77 Without fanout ########
+
+AND 9 1 2
+AND 10 3 4
+AND 11 5 6
+AND 12 7 8
+INPUT 1 2 3 4 5 6 7 8
+OR 13 9 10
+OR 14 11 12
+AND 15 13 14
+OUTPUT 15
+
+-------------------------------------------
+####### Test Set-03 : Bushnell Page No: 77  with fanout ########
+
+AND 9 1 5 
+FANOUT 2 5 6
+AND 10 6 7
+FANOUT 3 7 8
+INPUT 1 2 3 4
+AND 11 4 8 
+FANOUT 10 12 13
+OR 14 9 12
+OR 15 13 11
+AND 16 14 15
+OUTPUT 16
