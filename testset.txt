@@ -1,0 +1,29 @@
+####### Test Set-01 ########
+
+
+INPUT 1 2 5 8
+OUTPUT 16
+FANOUT 2 3 4 
+FANOUT 5 6 7 
+FANOUT 10 12 13
+AND 9 1 3
+AND 10 4 6 
+AND 11 7 8 
+OR 14 9 12
+OR 15 13 11
+AND 16 14 15
+
+
+-----------------------------------------
+
+########## Test Set-02 ######### : Assignment Question
+
+INPUT 1 2 3 4 5 
+OUTPUT 11
+FANOUT 7 8 9 
+NAND 6 1 2
+AND 7 4 5
+AND 10 6 3 8
+OR 11 10 9 
+
+------------------------------------------
